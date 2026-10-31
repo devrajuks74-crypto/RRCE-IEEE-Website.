@@ -1,1 +1,172 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #14233b;
+}
+
+/* Navigation */
+
+header {
+    background: #071b3b;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+
+.hero {
+    height: 550px;
+    background:
+    linear-gradient(rgba(3,20,45,.75), rgba(3,20,45,.75)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600")
+    center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #0877d1;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* General Sections */
+
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #0877d1;
+}
+
+.section p {
+    line-height: 1.8;
+}
+
+.gray {
+    background: #f1f5f9;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.card h3 {
+    color: #0877d1;
+    margin-bottom: 15px;
+}
+
+/* Contact */
+
+.contact {
+    background: #eaf4fc;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0877d1;
+}
+
+/* Footer */
+
+footer {
+    background: #071b3b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        padding: 0 15px;
+    }
+}
+
